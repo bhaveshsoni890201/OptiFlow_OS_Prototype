@@ -1,0 +1,610 @@
+{
+  "common": {
+    "retry": "पुनः प्रयास करें",
+    "cancel": "रद्द करें",
+    "done": "हो गया",
+    "dismiss": "खारिज करें",
+    "saving": "सहेजा जा रहा है...",
+    "pleaseWait": "कृपया प्रतीक्षा करें...",
+    "saveChanges": "बदलाव सहेजें",
+    "failedToLoad": "लोड करने में विफल",
+    "somethingWentWrong": "कुछ गलत हो गया",
+    "couldNotLoad": "लोड नहीं हो सका। कृपया पुनः प्रयास करें।",
+    "offline": "ऑफ़लाइन",
+    "offlineMessage": "आप ऑफ़लाइन हैं। कनेक्ट होने पर बदलाव सिंक हो जाएंगे।",
+    "confirm": "पुष्टि करें",
+    "viewOriginal": "मूल देखें",
+    "send": "भेजें",
+    "noRecords": "कोई रिकॉर्ड नहीं",
+    "allDone": "सब हो गया!",
+    "seeAll": "सभी देखें",
+    "edit": "संपादित करें",
+    "home": "होम",
+    "office": "कार्यालय",
+    "noData": "कोई डेटा नहीं",
+    "addComment": "टिप्पणी जोड़ें...",
+    "view": "देखें",
+    "hide": "छुपाएं",
+    "requestChange": "बदलाव का अनुरोध करें",
+    "change": "बदलें"
+  },
+  "profile": {
+    "title": "प्रोफ़ाइल",
+    "contactInfo": "संपर्क जानकारी",
+    "edit": "संपादित करें",
+    "mobile": "मोबाइल",
+    "email": "ईमेल",
+    "notSet": "सेट नहीं है",
+    "saving": "सहेजा जा रहा है...",
+    "saveChanges": "बदलाव सहेजें",
+    "cancel": "रद्द करें",
+    "dismiss": "खारिज करें",
+    "sensitiveInfo": "संवेदनशील जानकारी",
+    "bankDetails": "बैंक विवरण",
+    "tapToView": "देखने के लिए टैप करें",
+    "accountHolder": "खाताधारक",
+    "accountNumber": "खाता नंबर",
+    "ifsc": "IFSC",
+    "bank": "बैंक",
+    "requestChange": "बदलाव का अनुरोध करें",
+    "aadhaar": "आधार",
+    "settings": "सेटिंग्स",
+    "language": "भाषा",
+    "langEn": "EN",
+    "langHi": "HI",
+    "langHinglish": "हिंग्लिश",
+    "notifications": "सूचनाएं",
+    "taskUpdates": "कार्य अपडेट",
+    "leaveStatus": "छुट्टी की स्थिति",
+    "trainingReminders": "प्रशिक्षण अनुस्मारक",
+    "ticketUpdates": "टिकट अपडेट",
+    "highContrastMode": "उच्च कंट्रास्ट मोड",
+    "password": "पासवर्ड",
+    "change": "बदलें",
+    "logOut": "लॉग आउट",
+    "changePassword": {
+      "title": "पासवर्ड बदलें",
+      "currentPassword": "वर्तमान पासवर्ड",
+      "newPassword": "नया पासवर्ड",
+      "confirmNewPassword": "नया पासवर्ड पुष्टि करें",
+      "updatePassword": "पासवर्ड अपडेट करें",
+      "successTitle": "पासवर्ड बदला गया",
+      "successMessage": "आपका पासवर्ड सफलतापूर्वक अपडेट हो गया है।"
+    },
+    "logoutConfirm": "क्या आप वाकई OptiFlow से लॉग आउट करना चाहते हैं?",
+    "logoutConfirmCancel": "रद्द करें",
+    "logoutConfirmLogout": "लॉग आउट",
+    "validation": {
+      "phoneFormat": "प्रारूप: +91-XXXXXXXXXX",
+      "invalidEmail": "अमान्य ईमेल",
+      "saveFailed": "संपर्क जानकारी सहेजी नहीं जा सकी। कृपया पुनः प्रयास करें।",
+      "required": "आवश्यक",
+      "min8Chars": "न्यूनतम 8 अक्षर",
+      "mismatch": "बेमेल",
+      "updatedSuccessfully": "सफलतापूर्वक अपडेट किया गया।"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "शुभ प्रभात",
+      "afternoon": "शुभ अपराह्न",
+      "evening": "शुभ संध्या"
+    },
+    "tasksDueToday": "आज देय कार्य",
+    "checkIn": {
+      "notCheckedIn": "अभी चेक इन नहीं किया",
+      "tapToStart": "अपनी शिफ्ट शुरू करने के लिए टैप करें",
+      "checkedInAt": "यहां चेक इन किया",
+      "lateBy": "{minutes} मिनट देरी से",
+      "onTime": "समय पर"
+    },
+    "wfo": "WFO",
+    "wfh": "WFH",
+    "checkInBtn": "चेक इन",
+    "checkOutBtn": "चेक आउट",
+    "pleaseWait": "कृपया प्रतीक्षा करें...",
+    "allCaughtUp": {
+      "heading": "आज के लिए सब हो गया",
+      "message": "आपने अभी के लिए सब कुछ पूरा कर लिया है। एक अच्छा ब्रेक लें!",
+      "viewTasks": "कार्य देखें"
+    },
+    "taskStatus": {
+      "dueToday": "आज देय",
+      "overdue": "विलंबित",
+      "inProgress": "प्रगति पर",
+      "completed": "पूर्ण"
+    },
+    "noTasks": "अभी कोई कार्य नहीं",
+    "noTasksMessage": "आपका कैप्टन जल्द ही आपकी कार्यसूची निर्धारित करेगा।",
+    "dueChecklist": {
+      "title": "देय चेकलिस्ट कार्य",
+      "seeAll": "सभी देखें",
+      "allDone": "सब हो गया!",
+      "allDoneMessage": "आज के सभी चेकलिस्ट आइटम पूर्ण हो गए।"
+    },
+    "pendingDelegations": {
+      "title": "लंबित प्रतिनियुक्तियां",
+      "allDelegated": "सभी प्रतिनियुक्त हो गए!",
+      "nonePending": "कोई लंबित प्रतिनियुक्ति नहीं।"
+    },
+    "fmsWorkflow": {
+      "title": "FMS / वर्कफ़्लो देय आइटम",
+      "noItems": "कोई वर्कफ़्लो आइटम नहीं",
+      "allUpToDate": "सभी वर्कफ़्लो कार्य अद्यतित हैं।"
+    },
+    "alertsReminders": {
+      "title": "अलर्ट और अनुस्मारक",
+      "allClear": "सब साफ़ है",
+      "noAlerts": "कैप्टन की ओर से कोई अलर्ट या अनुस्मारक नहीं।"
+    },
+    "coveringFor": "{name} के लिए कवर कर रहे हैं",
+    "refreshing": "रिफ्रेश हो रहा है...",
+    "loadError": "डैशबोर्ड डेटा लोड नहीं हो सका। कृपया पुनः प्रयास करें।",
+    "dueTime": "{time} बजे देय",
+    "reminderCount": "{count} अनुस्मारक",
+    "markedDone": "पूर्ण चिह्नित",
+    "leaveStatus": {
+      "title": "छुट्टी की स्थिति",
+      "pending": "{count} लंबित अनुरोध",
+      "onLeaveToday": "आज छुट्टी पर",
+      "noLeave": "कोई छुट्टी निर्धारित नहीं"
+    },
+    "trainingProgress": {
+      "title": "प्रशिक्षण प्रगति"
+    },
+    "productivity": {
+      "title": "उत्पादकता",
+      "completionRate": "पूर्णता दर",
+      "onTimeRate": "समय पर दर"
+    },
+    "quickActions": {
+      "createTask": "कार्य बनाएं",
+      "applyLeave": "छुट्टी लें",
+      "raiseTicket": "टिकट उठाएं",
+      "startTraining": "प्रशिक्षण शुरू करें"
+    }
+  },
+  "tasks": {
+    "title": "मेरे कार्य",
+    "tabs": {
+      "delegation": "प्रतिनियुक्ति",
+      "checklist": "चेकलिस्ट",
+      "fms": "FMS"
+    },
+    "searchPlaceholder": "कार्य खोजें...",
+    "filters": {
+      "label": "फ़िल्टर",
+      "clear": "साफ़ करें",
+      "clearAll": "सभी साफ़ करें",
+      "status": "स्थिति",
+      "priority": "प्राथमिकता",
+      "apply": "फ़िल्टर लागू करें ({count} कार्य)"
+    },
+    "statusOptions": {
+      "pending": "लंबित",
+      "inProgress": "प्रगति पर",
+      "blocked": "अवरुद्ध",
+      "escalated": "उन्नत",
+      "completed": "पूर्ण"
+    },
+    "priorityOptions": {
+      "low": "निम्न",
+      "medium": "मध्यम",
+      "high": "उच्च",
+      "critical": "गंभीर"
+    },
+    "sort": {
+      "due": "देय तिथि",
+      "priority": "प्राथमिकता",
+      "activity": "गतिविधि"
+    },
+    "emptyState": {
+      "noTasks": "कोई {tab} कार्य नहीं",
+      "tapToCreate": "नया बनाने के लिए + टैप करें।",
+      "checklistAssigned": "आपका कैप्टन चेकलिस्ट आइटम निर्धारित करेगा।",
+      "noWorkflowItems": "अभी कोई वर्कफ़्लो आइटम नहीं।"
+    },
+    "failedToLoad": "कार्य लोड करने में विफल",
+    "statusFilterCount": "{count} स्थिति फ़िल्टर",
+    "overdueLabel": "{n} दिन विलंबित",
+    "todayTime": "आज {time}",
+    "assignedBy": "{name} द्वारा निर्धारित",
+    "markedDone": "पूर्ण चिह्नित"
+  },
+  "worklist": {
+    "title": "मेरी कार्यसूची",
+    "all": "सभी",
+    "daily": "दैनिक",
+    "weekly": "साप्ताहिक",
+    "monthly": "मासिक",
+    "emptyState": {
+      "noItems": "कोई कार्यसूची आइटम नहीं",
+      "notAssigned": "अभी कोई कार्यसूची निर्धारित नहीं हुई — आपका कैप्टन इसे सेट करेगा।",
+      "noFrequencyItems": "कोई {frequency} आइटम निर्धारित नहीं।"
+    },
+    "next": "अगला:",
+    "assignedBy": "{name} द्वारा निर्धारित",
+    "kpi": "KPI:",
+    "viewSopTraining": "SOP / प्रशिक्षण देखें",
+    "viewInApp": "ऐप में देखें",
+    "sopTraining": "SOP / प्रशिक्षण",
+    "openInNewTab": "नए टैब में खोलें",
+    "failedToLoad": "कार्यसूची लोड करने में विफल",
+    "couldNotLoad": "कार्यसूची लोड नहीं हो सकी। कृपया पुनः प्रयास करें।"
+  },
+  "taskDetail": {
+    "statusLabels": {
+      "pending": "लंबित",
+      "inProgress": "प्रगति पर",
+      "blocked": "अवरुद्ध",
+      "escalated": "उन्नत",
+      "completed": "पूर्ण",
+      "reviewed": "समीक्षित"
+    },
+    "nextAction": {
+      "start": "शुरू करें",
+      "complete": "पूर्ण करें",
+      "resume": "जारी रखें",
+      "markResolved": "हल चिह्नित करें",
+      "next": "अगला"
+    },
+    "progress": "प्रगति",
+    "due": "देय:",
+    "followUp": "अनुवर्ती:",
+    "assignedTo": "निर्धारित:",
+    "createdBy": "निर्माता:",
+    "lastActivity": "अंतिम गतिविधि:",
+    "frequency": "आवृत्ति:",
+    "nextDue": "अगली देय तिथि:",
+    "workflow": "वर्कफ़्लो:",
+    "stage": "चरण:",
+    "actionRequired": "आवश्यक कार्रवाई:",
+    "description": "विवरण",
+    "activity": "गतिविधि",
+    "comments": "टिप्पणियां",
+    "showAll": "सभी दिखाएं",
+    "showLess": "कम दिखाएं",
+    "noActivity": "अभी तक कोई गतिविधि दर्ज नहीं हुई",
+    "addComment": "टिप्पणी जोड़ें...",
+    "send": "भेजें",
+    "activityTypes": {
+      "taskCreated": "कार्य बनाया गया",
+      "workStarted": "कार्य शुरू हुआ",
+      "taskCompleted": "कार्य पूर्ण हुआ",
+      "reminderSent": "{count} अनुस्मारक भेजे गए",
+      "taskMoved": "कार्य {status} में स्थानांतरित हुआ",
+      "commentAdded": "टिप्पणी जोड़ी गई"
+    },
+    "failedToLoad": "कार्य लोड करने में विफल",
+    "notFound": "कार्य नहीं मिला",
+    "notFoundMessage": "आप जिस कार्य की तलाश कर रहे हैं वह मौजूद नहीं है या हटा दिया गया है।",
+    "completing": "पूर्ण किया जा रहा है...",
+    "blockedReason": "यह क्यों अवरुद्ध है?",
+    "confirm": "पुष्टि करें",
+    "cancel": "रद्द करें",
+    "block": "अवरुद्ध करें",
+    "escalate": "उन्नत करें",
+    "markedBlocked": "कार्य अवरुद्ध चिह्नित किया गया",
+    "escalated": "कार्य उन्नत किया गया",
+    "loadError": "कार्य विवरण लोड नहीं हो सका। कृपया पुनः प्रयास करें।",
+    "viewOriginal": "मूल देखें"
+  },
+  "ticketDetail": {
+    "notFound": "टिकट नहीं मिला",
+    "notFoundMessage": "आप जिस टिकट की तलाश कर रहे हैं वह मौजूद नहीं है।",
+    "backToTickets": "टिकट पर वापस जाएं",
+    "failedToLoad": "टिकट लोड करने में विफल",
+    "loadError": "टिकट विवरण लोड नहीं हो सका। कृपया पुनः प्रयास करें।",
+    "statusLabels": {
+      "open": "open",
+      "inReview": "in_review",
+      "escalated": "escalated",
+      "resolved": "resolved",
+      "closed": "closed"
+    },
+    "statusDisplay": {
+      "open": "खुला",
+      "inReview": "समीक्षाधीन",
+      "escalated": "उन्नत",
+      "resolved": "हल",
+      "closed": "बंद"
+    },
+    "statusProgress": "स्थिति प्रगति",
+    "activityComments": "गतिविधि और टिप्पणियां",
+    "noComments": "अभी कोई टिप्पणी नहीं",
+    "addComment": "टिप्पणी जोड़ें...",
+    "send": "भेजें",
+    "resolution": "समाधान",
+    "raisedDate": "{date} को उठाया गया",
+    "updatedDate": "{date} को अपडेट किया गया"
+  },
+  "training": {
+    "title": "प्रशिक्षण",
+    "filters": {
+      "all": "सभी",
+      "notStarted": "शुरू नहीं हुआ",
+      "inProgress": "प्रगति पर",
+      "completed": "पूर्ण",
+      "overdue": "विलंबित"
+    },
+    "emptyState": {
+      "noTraining": "कोई प्रशिक्षण निर्धारित नहीं",
+      "allCaughtUp": "आप सब अप टू डेट हैं! नए प्रशिक्षण के लिए बाद में देखें।"
+    },
+    "due": "देय:",
+    "types": {
+      "sop": "SOP",
+      "video": "वीडियो",
+      "guide": "गाइड",
+      "standalone": "स्टैंडअलोन",
+      "fromWorklist": "कार्यसूची से"
+    },
+    "relatedToWorklist": "कार्यसूची आइटम {id} से संबंधित",
+    "overdueMessage": "यह प्रशिक्षण विलंबित है। कृपया जल्द से जल्द पूरा करें।",
+    "startTraining": "प्रशिक्षण शुरू करें",
+    "markNotStarted": "शुरू नहीं हुआ चिह्नित करें",
+    "readUnderstood": "मैंने यह प्रशिक्षण पढ़/समझ लिया है",
+    "confirmReview": "पुष्टि करें कि आपने सभी सामग्री की समीक्षा और समझ ली है",
+    "contentRequired": "पूर्ण चिह्नित करने से पहले सामग्री लोड होनी चाहिए",
+    "markComplete": "पूर्ण चिह्नित करें",
+    "completedOn": "{date} को पूर्ण हुआ",
+    "description": "यह प्रशिक्षण आवश्यक प्रक्रियाओं और सर्वोत्तम अभ्यासों को शामिल करता है। पूर्ण चिह्नित करने से पहले कृपया ध्यानपूर्वक समीक्षा करें।",
+    "statusLabels": {
+      "overdue": "विलंबित",
+      "completed": "पूर्ण",
+      "inProgress": "प्रगति पर",
+      "notStarted": "शुरू नहीं हुआ"
+    },
+    "deadline": "समय सीमा: {date}"
+  },
+  "leave": {
+    "title": "छुट्टी",
+    "applyForLeave": "छुट्टी के लिए आवेदन करें",
+    "leaveTypes": {
+      "casual": "आकस्मिक छुट्टी",
+      "sick": "बीमारी की छुट्टी",
+      "earned": "अर्जित छुट्टी"
+    },
+    "usedOfTotal": "{total} में से {used} उपयोग",
+    "myRequests": "मेरे छुट्टी अनुरोध",
+    "emptyState": {
+      "noRequests": "अभी तक कोई छुट्टी अनुरोध नहीं",
+      "tapToApply": "अपना पहला अनुरोध प्रस्तुत करने के लिए \"छुट्टी के लिए आवेदन करें\" टैप करें।"
+    },
+    "applyLeave": "छुट्टी के लिए आवेदन करें",
+    "statusLabels": {
+      "approved": "approved",
+      "rejected": "rejected",
+      "pending": "pending"
+    },
+    "statusDisplay": {
+      "approved": "स्वीकृत",
+      "rejected": "अस्वीकृत",
+      "pending": "लंबित"
+    },
+    "buddy": "बडी: {name}",
+    "tasksTransferred": "कार्य स्थानांतरित",
+    "viewReason": "कारण देखें",
+    "leaveRequested": "छुट्टी का अनुरोध किया गया",
+    "pendingMessage": "कैप्टन की स्वीकृति लंबित। स्वीकृत होने पर, आपके सक्रिय कार्य {name} को स्थानांतरित हो जाएंगे।",
+    "form": {
+      "leaveType": "छुट्टी का प्रकार",
+      "startDate": "आरंभ तिथि",
+      "endDate": "समाप्त तिथि",
+      "reason": "कारण",
+      "buddy": "बडी (कार्य हस्तांतरण)",
+      "searchByName": "नाम से खोजें...",
+      "selected": "चयनित: {name}",
+      "totalDays": "कुल दिन",
+      "insufficientBalance": "अपर्याप्त शेष। {type} में केवल {remaining} दिन शेष हैं।",
+      "submit": "छुट्टी अनुरोध जमा करें",
+      "reasonPlaceholder": "आपको छुट्टी की आवश्यकता क्यों है?"
+    },
+    "validation": {
+      "selectLeaveType": "छुट्टी का प्रकार चुनें",
+      "selectStartDate": "आरंभ तिथि चुनें",
+      "selectEndDate": "समाप्त तिथि चुनें",
+      "endAfterStart": "समाप्त तिथि आरंभ तिथि के बाद होनी चाहिए",
+      "reasonRequired": "कारण आवश्यक है",
+      "selectBuddy": "कार्य हस्तांतरण के लिए बडी चुनें",
+      "insufficientBalance": "अपर्याप्त शेष"
+    },
+    "countUsedOfTotal": "{total} में से {count} उपयोग",
+    "daysCount": "{days} दिन",
+    "day": "दिन",
+    "days": "दिन",
+    "failedToLoad": "अनुरोध लोड करने में विफल",
+    "loadError": "छुट्टी अनुरोध लोड नहीं हो सके। कृपया पुनः प्रयास करें।"
+  },
+  "attendance": {
+    "title": "उपस्थिति",
+    "summary": "सारांश",
+    "today": "आज",
+    "history": "इतिहास",
+    "recentRecords": "हाल के रिकॉर्ड",
+    "thisMonth": "इस महीने",
+    "statusLabels": {
+      "present": "उपस्थित",
+      "late": "विलंब",
+      "absent": "अनुपस्थित",
+      "leave": "छुट्टी",
+      "onLeave": "छुट्टी पर",
+      "noRecord": "कोई रिकॉर्ड नहीं"
+    },
+    "correctionStatus": {
+      "pending": "सुधार लंबित",
+      "correctionPending": "सुधार लंबित",
+      "corrected": "सुधारित",
+      "rejected": "अस्वीकृत"
+    },
+    "checkIn": "चेक इन",
+    "checkOut": "चेक आउट",
+    "checkedIn": "चेक इन किया",
+    "checkedOut": "चेक आउट किया",
+    "notCheckedIn": "चेक इन नहीं किया",
+    "onLeaveToday": "आज छुट्टी पर",
+    "sickLeaveApproved": "बीमारी की छुट्टी — {name} द्वारा स्वीकृत",
+    "workMode": "कार्य मोड:",
+    "workFromOffice": "कार्यालय से कार्य",
+    "workFromHome": "घर से कार्य",
+    "requestCorrection": "सुधार का अनुरोध करें",
+    "noRecordForDate": "इस तिथि के लिए कोई रिकॉर्ड नहीं",
+    "lateBy": "{minutes} मिनट देरी से",
+    "failedToLoad": "लोड करने में विफल",
+    "loadError": "उपस्थिति डेटा लोड नहीं हो सका। कृपया पुनः प्रयास करें।",
+    "inTime": "प्रवेश: {time}",
+    "outTime": "निकास: {time}",
+    "runningDuration": "{hours}घं {minutes}मिन (जारी)",
+    "logDisplay": "{checkIn} → {checkOut}",
+    "office": "कार्यालय",
+    "home": "घर",
+    "lateMinutes": "{m}मिन विलंब",
+    "noLogs": "इस महीने कोई उपस्थिति लॉग नहीं।",
+    "noRecords": "कोई रिकॉर्ड नहीं",
+    "days": {
+      "sun": "रवि",
+      "mon": "सोम",
+      "tue": "मंगल",
+      "wed": "बुध",
+      "thu": "गुरु",
+      "fri": "शुक्र",
+      "sat": "शनि"
+    },
+    "months": {
+      "january": "जनवरी",
+      "february": "फरवरी",
+      "march": "मार्च",
+      "april": "अप्रैल",
+      "may": "मई",
+      "june": "जून",
+      "july": "जुलाई",
+      "august": "अगस्त",
+      "september": "सितंबर",
+      "october": "अक्टूबर",
+      "november": "नवंबर",
+      "december": "दिसंबर"
+    },
+    "correctionForm": {
+      "title": "सुधार का अनुरोध करें",
+      "selectRecord": "रिकॉर्ड चुनें",
+      "chooseDate": "तिथि चुनें...",
+      "correctedCheckIn": "सुधारित चेक इन",
+      "correctedCheckOut": "सुधारित चेक आउट",
+      "reason": "कारण",
+      "attachment": "अटैचमेंट (वैकल्पिक)",
+      "uploadDocument": "समर्थन दस्तावेज़ अपलोड करें",
+      "submit": "सुधार जमा करें",
+      "submitted": "सुधार अनुरोध प्रस्तुत किया गया",
+      "submittedMessage": "आपका कैप्टन जल्द ही इसकी समीक्षा करेगा।"
+    }
+  },
+  "helpTickets": {
+    "title": "सहायता टिकट",
+    "raiseTicket": "टिकट उठाएं",
+    "noTickets": "कोई टिकट नहीं",
+    "emptyMessage": "यदि आप फंस गए हैं तो एक उठाएं — आपका कैप्टन या एडमिन इसे लेगा।",
+    "statusLabels": {
+      "open": "खुला",
+      "inReview": "समीक्षाधीन",
+      "escalated": "उन्नत",
+      "resolved": "हल",
+      "closed": "बंद"
+    },
+    "categoryOptions": {
+      "softwareBug": "सॉफ़्टवेयर बग",
+      "networkIssue": "नेटवर्क समस्या",
+      "equipment": "उपकरण",
+      "training": "प्रशिक्षण",
+      "hr": "HR",
+      "other": "अन्य"
+    },
+    "form": {
+      "title": "टिकट उठाएं",
+      "category": "श्रेणी",
+      "subject": "विषय",
+      "description": "विवरण",
+      "attachments": "अटैचमेंट (वैकल्पिक)",
+      "uploadPrompt": "चित्र या दस्तावेज़ अपलोड करें",
+      "submit": "टिकट जमा करें",
+      "categoryPlaceholder": "श्रेणी चुनें...",
+      "subjectPlaceholder": "आपकी समस्या का संक्षिप्त शीर्षक"
+    },
+    "validation": {
+      "categoryRequired": "श्रेणी आवश्यक है",
+      "subjectRequired": "विषय आवश्यक है",
+      "subjectMinLength": "विषय कम से कम 3 अक्षर का होना चाहिए",
+      "subjectMaxLength": "विषय बहुत लंबा है (अधिकतम 200 अक्षर)",
+      "descriptionRequired": "विवरण आवश्यक है"
+    },
+    "success": {
+      "title": "टिकट उठाया गया",
+      "message": "आपका टिकट प्रस्तुत कर दिया गया है।",
+      "detail": "आपका टिकट प्रस्तुत कर दिया गया है। आपका कैप्टन या एडमिन जल्द ही इसकी समीक्षा करेगा। आप इस पेज से इसकी स्थिति ट्रैक कर सकते हैं।"
+    },
+    "error": {
+      "somethingWentWrong": "कुछ गलत हो गया",
+      "dismiss": "खारिज करें"
+    },
+    "raisedDate": "{date} को उठाया गया",
+    "updatedDate": "{date} को अपडेट किया गया",
+    "resolution": "समाधान",
+    "commentsCount": "टिप्पणियां ({count})",
+    "noComments": "अभी कोई टिप्पणी नहीं",
+    "addComment": "टिप्पणी जोड़ें...",
+    "send": "भेजें"
+  },
+  "createTask": {
+    "title": "नया कार्य",
+    "titleField": "शीर्षक",
+    "description": "विवरण",
+    "priority": "प्राथमिकता",
+    "dueDate": "नियत तिथि",
+    "nextFollowUp": "अगला अनुवर्ती",
+    "attachments": "अटैचमेंट",
+    "uploadPrompt": "PDF, DOCX, या चित्र अपलोड करें",
+    "cancel": "रद्द करें",
+    "saveTask": "कार्य सहेजें",
+    "taskCreated": "कार्य बनाया गया ✓",
+    "pendingSync": "सिंक लंबित — ऑनलाइन होने पर अपलोड होगा",
+    "discardChanges": "बदलाव छोड़ दें?",
+    "titlePlaceholder": "जैसे, लॉट #FQ-4421 पर गुणवत्ता जांच",
+    "descriptionPlaceholder": "इस कार्य के बारे में विवरण जोड़ें...",
+    "dueDateHint": "वैकल्पिक। इस सप्ताह तक सीमित ({start} – {end})।",
+    "priorityOptions": {
+      "low": "निम्न",
+      "medium": "मध्यम",
+      "high": "उच्च",
+      "critical": "गंभीर"
+    },
+    "validation": {
+      "dueDateRequired": "नियत तिथि आवश्यक है",
+      "dueDatePast": "नियत तिथि अतीत में नहीं हो सकती",
+      "dueDateWithinWeek": "इस सप्ताह के भीतर होनी चाहिए"
+    },
+    "saveError": "कार्य सहेजा नहीं जा सका। कृपया पुनः प्रयास करें।",
+    "syncMessage": "कार्य बनाया गया! ऑनलाइन होने पर सिंक होगा।"
+  },
+  "notificationsPage": {
+    "notifications": "सूचनाएं",
+    "all": "सभी",
+    "unread": "अपठित",
+    "tasks": "कार्य",
+    "system": "सिस्टम",
+    "markAllRead": "सभी पढ़े हुए चिह्नित करें",
+    "markRead": "पढ़ा हुआ चिह्नित करें",
+    "viewDetails": "विवरण देखें",
+    "empty": "अभी तक कोई सूचना नहीं",
+    "emptyMessage": "जब आपके कैप्टन अपडेट या अलर्ट भेजेंगे, तो वे यहां दिखाई देंगे।",
+    "goToDashboard": "डैशबोर्ड पर जाएं",
+    "failedToLoad": "सूचनाएं लोड करने में विफल",
+    "loadError": "सूचनाएं प्राप्त नहीं की जा सकीं। कृपया पुनः प्रयास करें।",
+    "types": {
+      "task": "कार्य अपडेट",
+      "rescue": "राहत अलर्ट",
+      "leave": "छुट्टी अपडेट",
+      "ticket": "टिकट अपडेट",
+      "system": "सिस्टम सूचना",
+      "training": "प्रशिक्षण अपडेट"
+    }
+  }
+}

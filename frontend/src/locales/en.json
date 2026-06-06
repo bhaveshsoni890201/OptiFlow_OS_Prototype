@@ -1,0 +1,618 @@
+{
+  "common": {
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "done": "Done",
+    "dismiss": "Dismiss",
+    "saving": "Saving...",
+    "pleaseWait": "Please wait...",
+    "saveChanges": "Save Changes",
+    "failedToLoad": "Failed to load",
+    "somethingWentWrong": "Something went wrong",
+    "couldNotLoad": "Could not load. Please try again.",
+    "offline": "Offline",
+    "offlineMessage": "You're offline. Changes will sync when connected.",
+    "confirm": "Confirm",
+    "viewOriginal": "View Original",
+    "send": "Send",
+    "noRecords": "No records",
+    "allDone": "All done!",
+    "seeAll": "See all",
+    "edit": "Edit",
+    "home": "Home",
+    "office": "Office",
+    "noData": "No data",
+    "addComment": "Add a comment...",
+    "view": "View",
+    "hide": "Hide",
+    "requestChange": "Request Change",
+    "change": "Change"
+  },
+  "profile": {
+    "title": "Profile",
+    "contactInfo": "Contact Information",
+    "edit": "Edit",
+    "mobile": "Mobile",
+    "email": "Email",
+    "notSet": "Not set",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+    "dismiss": "Dismiss",
+    "sensitiveInfo": "Sensitive Information",
+    "bankDetails": "Bank Details",
+    "tapToView": "Tap to view",
+    "accountHolder": "Account Holder",
+    "accountNumber": "Account Number",
+    "ifsc": "IFSC",
+    "bank": "Bank",
+    "requestChange": "Request Change",
+    "aadhaar": "Aadhaar",
+    "settings": "Settings",
+    "language": "Language",
+    "langEn": "EN",
+    "langHi": "HI",
+    "langHinglish": "Hinglish",
+    "notifications": "Notifications",
+    "taskUpdates": "Task updates",
+    "leaveStatus": "Leave status",
+    "trainingReminders": "Training reminders",
+    "ticketUpdates": "Ticket updates",
+    "highContrastMode": "High-contrast mode",
+    "password": "Password",
+    "change": "Change",
+    "logOut": "Log Out",
+    "changePassword": {
+      "title": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "successTitle": "Password Changed",
+      "successMessage": "Your password has been updated successfully."
+    },
+    "logoutConfirm": "Are you sure you want to log out of OptiFlow?",
+    "logoutConfirmCancel": "Cancel",
+    "logoutConfirmLogout": "Log Out",
+    "validation": {
+      "phoneFormat": "Format: +91-XXXXXXXXXX",
+      "invalidEmail": "Invalid email",
+      "saveFailed": "Could not save contact information. Please try again.",
+      "required": "Required",
+      "min8Chars": "Min 8 characters",
+      "mismatch": "Mismatch",
+      "updatedSuccessfully": "Updated successfully."
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening"
+    },
+    "tasksDueToday": "tasks due today",
+    "checkIn": {
+      "notCheckedIn": "Not checked in yet",
+      "tapToStart": "Tap to start your shift",
+      "checkedInAt": "Checked in at",
+      "lateBy": "Late by {minutes} min",
+      "onTime": "On time"
+    },
+    "wfo": "WFO",
+    "wfh": "WFH",
+    "checkInBtn": "Check In",
+    "checkOutBtn": "Check Out",
+    "pleaseWait": "Please wait...",
+    "allCaughtUp": {
+      "heading": "All caught up for today",
+      "message": "You've completed everything for now. Take a well-deserved break!",
+      "viewTasks": "View Tasks"
+    },
+    "taskStatus": {
+      "dueToday": "Due Today",
+      "overdue": "Overdue",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "noTasks": "No tasks yet",
+    "noTasksMessage": "Your Captain will assign your worklist soon.",
+    "dueChecklist": {
+      "title": "Due Checklist Tasks",
+      "seeAll": "See all",
+      "allDone": "All done!",
+      "allDoneMessage": "All checklist items completed for today."
+    },
+    "pendingDelegations": {
+      "title": "Pending Delegations",
+      "allDelegated": "All delegated!",
+      "nonePending": "No pending delegations."
+    },
+    "fmsWorkflow": {
+      "title": "FMS / Workflow Due Items",
+      "noItems": "No workflow items",
+      "allUpToDate": "All workflow tasks up to date."
+    },
+    "alertsReminders": {
+      "title": "Alerts & Reminders",
+      "allClear": "All clear",
+      "noAlerts": "No alerts or reminders from your Captain."
+    },
+    "coveringFor": "Covering for {name}",
+    "refreshing": "Refreshing...",
+    "loadError": "Could not load dashboard data. Please try again.",
+    "timedOut": "Request timed out. Please check your connection and try again.",
+    "dueTime": "Due {time}",
+    "reminderCount": "{count} reminder(s)",
+    "markedDone": "marked done",
+    "leaveStatus": {
+      "title": "Leave Status",
+      "pending": "{count} pending request(s)",
+      "onLeaveToday": "On leave today",
+      "noLeave": "No leave scheduled"
+    },
+    "trainingProgress": {
+      "title": "Training Progress"
+    },
+    "productivity": {
+      "title": "Productivity",
+      "completionRate": "Completion Rate",
+      "onTimeRate": "On-Time Rate"
+    },
+    "quickActions": {
+      "createTask": "Create Task",
+      "applyLeave": "Apply Leave",
+      "raiseTicket": "Raise Ticket",
+      "startTraining": "Start Training"
+    }
+  },
+  "tasks": {
+    "title": "My Tasks",
+    "tabs": {
+      "delegation": "delegation",
+      "checklist": "checklist",
+      "fms": "fms"
+    },
+    "searchPlaceholder": "Search tasks...",
+    "filters": {
+      "label": "Filters",
+      "clear": "Clear",
+      "clearAll": "Clear all",
+      "status": "Status",
+      "priority": "Priority",
+      "apply": "Apply Filters ({count} tasks)"
+    },
+    "statusOptions": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "blocked": "Blocked",
+      "escalated": "Escalated",
+      "completed": "Completed"
+    },
+    "priorityOptions": {
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "critical": "critical"
+    },
+    "sort": {
+      "due": "Due",
+      "priority": "Priority",
+      "activity": "Activity"
+    },
+    "emptyState": {
+      "noTasks": "No {tab} tasks",
+      "tapToCreate": "Tap + to create one.",
+      "checklistAssigned": "Your captain will assign checklist items.",
+      "noWorkflowItems": "No workflow items for now."
+    },
+    "failedToLoad": "Failed to load tasks",
+    "statusFilterCount": "{count} status filter(s)",
+    "overdueLabel": "{n}d overdue",
+    "todayTime": "Today {time}",
+    "assignedBy": "Assigned by {name}",
+    "markedDone": "marked done"
+  },
+  "worklist": {
+    "title": "My Worklist",
+    "all": "All",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "emptyState": {
+      "noItems": "No worklist items",
+      "notAssigned": "No worklist assigned yet — your Captain will set this up.",
+      "noFrequencyItems": "No {frequency} items assigned."
+    },
+    "next": "Next:",
+    "assignedBy": "Assigned by {name}",
+    "kpi": "KPI:",
+    "viewSopTraining": "View SOP / Training",
+    "viewInApp": "View in App",
+    "sopTraining": "SOP / Training",
+    "openInNewTab": "Open in new tab",
+    "failedToLoad": "Failed to load worklist",
+    "couldNotLoad": "Could not load worklist. Please try again."
+  },
+  "taskDetail": {
+    "statusLabels": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "blocked": "Blocked",
+      "escalated": "Escalated",
+      "completed": "Completed",
+      "reviewed": "Reviewed"
+    },
+    "nextAction": {
+      "start": "Start",
+      "complete": "Complete",
+      "resume": "Resume",
+      "markResolved": "Mark Resolved",
+      "next": "Next"
+    },
+    "progress": "Progress",
+    "due": "Due:",
+    "followUp": "Follow-up:",
+    "assignedTo": "Assigned to:",
+    "createdBy": "Created by:",
+    "lastActivity": "Last activity:",
+    "frequency": "Frequency:",
+    "nextDue": "Next due:",
+    "workflow": "Workflow:",
+    "stage": "Stage:",
+    "actionRequired": "Action required:",
+    "description": "Description",
+    "activity": "Activity",
+    "comments": "Comments",
+    "showAll": "Show all",
+    "showLess": "Show less",
+    "noActivity": "No activity recorded yet",
+    "addComment": "Add a comment...",
+    "send": "Send",
+    "activityTypes": {
+      "taskCreated": "Task created",
+      "workStarted": "Work started",
+      "taskCompleted": "Task completed",
+      "reminderSent": "{count} reminder(s) sent",
+      "taskMoved": "Task moved to {status}",
+      "commentAdded": "Comment added"
+    },
+    "failedToLoad": "Failed to load task",
+    "notFound": "Task not found",
+    "notFoundMessage": "The task you're looking for doesn't exist or has been removed.",
+    "completing": "Completing...",
+    "blockedReason": "Why is this blocked?",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "block": "Block",
+    "escalate": "Escalate",
+    "markedBlocked": "Task marked as blocked",
+    "escalated": "Task escalated",
+    "loadError": "Could not load task details. Please try again.",
+    "reminderCount": "{count} reminder(s)",
+    "viewOriginal": "View Original"
+  },
+  "ticketDetail": {
+    "notFound": "Ticket not found",
+    "notFoundMessage": "The ticket you're looking for doesn't exist.",
+    "backToTickets": "Back to tickets",
+    "failedToLoad": "Failed to load ticket",
+    "loadError": "Could not load ticket details. Please try again.",
+    "statusLabels": {
+      "open": "open",
+      "inReview": "in_review",
+      "escalated": "escalated",
+      "resolved": "resolved",
+      "closed": "closed"
+    },
+    "statusDisplay": {
+      "open": "Open",
+      "inReview": "In Review",
+      "escalated": "Escalated",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "statusProgress": "Status Progress",
+    "activityComments": "Activity & Comments",
+    "noComments": "No comments yet",
+    "addComment": "Add a comment...",
+    "send": "Send",
+    "resolution": "Resolution",
+    "raisedDate": "Raised {date}",
+    "updatedDate": "Updated {date}"
+  },
+  "training": {
+    "title": "Training",
+    "filters": {
+      "all": "All",
+      "notStarted": "Not Started",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "overdue": "Overdue"
+    },
+    "emptyState": {
+      "noTraining": "No training assigned",
+      "allCaughtUp": "You're all caught up! Check back later for new training."
+    },
+    "due": "Due:",
+    "types": {
+      "sop": "SOP",
+      "video": "Video",
+      "guide": "Guide",
+      "standalone": "Standalone",
+      "fromWorklist": "From Worklist"
+    },
+    "relatedToWorklist": "Related to worklist item {id}",
+    "overdueMessage": "This training is overdue. Please complete as soon as possible.",
+    "startTraining": "Start Training",
+    "markNotStarted": "Mark as Not Started",
+    "readUnderstood": "I have read/understood this training",
+    "confirmReview": "Confirm that you have reviewed and understood all content",
+    "contentRequired": "Content must be loaded before marking as complete",
+    "markComplete": "Mark Complete",
+    "completedOn": "Completed on {date}",
+    "description": "This training covers essential procedures and best practices. Please review thoroughly before marking as complete.",
+    "statusLabels": {
+      "overdue": "Overdue",
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "notStarted": "Not Started"
+    },
+    "deadline": "Deadline: {date}"
+  },
+  "leave": {
+    "title": "Leave",
+    "applyForLeave": "Apply for Leave",
+    "leaveTypes": {
+      "casual": "Casual Leave",
+      "sick": "Sick Leave",
+      "earned": "Earned Leave"
+    },
+    "usedOfTotal": "{used} used of {total}",
+    "myRequests": "My Leave Requests",
+    "emptyState": {
+      "noRequests": "No leave requests yet",
+      "tapToApply": "Tap \"Apply Leave\" to submit your first request."
+    },
+    "applyLeave": "Apply Leave",
+    "statusLabels": {
+      "approved": "approved",
+      "rejected": "rejected",
+      "pending": "pending"
+    },
+    "statusDisplay": {
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "pending": "Pending"
+    },
+    "buddy": "Buddy: {name}",
+    "tasksTransferred": "Tasks transferred",
+    "viewReason": "View reason",
+    "leaveRequested": "Leave Requested",
+    "pendingMessage": "Pending Captain approval. If approved, your active tasks will move to {name}.",
+    "form": {
+      "leaveType": "Leave Type",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "reason": "Reason",
+      "buddy": "Buddy (Task Handover)",
+      "searchByName": "Search by name...",
+      "selected": "Selected: {name}",
+      "totalDays": "Total Days",
+      "insufficientBalance": "Insufficient balance. {type} has only {remaining} days remaining.",
+      "submit": "Submit Leave Request",
+      "reasonPlaceholder": "Why do you need leave?"
+    },
+    "validation": {
+      "selectLeaveType": "Select leave type",
+      "selectStartDate": "Select start date",
+      "selectEndDate": "Select end date",
+      "endAfterStart": "End date must be after start date",
+      "reasonRequired": "Reason is required",
+      "selectBuddy": "Select a buddy for task handover",
+      "insufficientBalance": "Insufficient balance"
+    },
+    "countUsedOfTotal": "{count} used of {total}",
+    "daysCount": "{days} day(s)",
+    "day": "day",
+    "days": "days",
+    "failedToLoad": "Failed to load requests",
+    "loadError": "Could not load leave requests. Please try again."
+  },
+  "attendance": {
+    "title": "Attendance",
+    "summary": "Summary",
+    "today": "Today",
+    "history": "History",
+    "recentRecords": "Recent Records",
+    "thisMonth": "This Month",
+    "statusLabels": {
+      "present": "Present",
+      "late": "Late",
+      "absent": "Absent",
+      "leave": "Leave",
+      "onLeave": "On Leave",
+      "noRecord": "No Record"
+    },
+    "correctionStatus": {
+      "pending": "Corrections Pending",
+      "correctionPending": "Correction Pending",
+      "corrected": "Corrected",
+      "rejected": "Rejected"
+    },
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "checkedIn": "Checked In",
+    "checkedOut": "Checked Out",
+    "notCheckedIn": "Not Checked In",
+    "onLeaveToday": "On Leave Today",
+    "sickLeaveApproved": "Sick Leave — approved by {name}",
+    "workMode": "Work Mode:",
+    "workFromOffice": "Work from Office",
+    "workFromHome": "Work from Home",
+    "requestCorrection": "Request Correction",
+    "noRecordForDate": "No record for this date",
+    "lateBy": "Late by {minutes} min",
+    "failedToLoad": "Failed to load",
+    "loadError": "Could not load attendance data. Please try again.",
+    "inTime": "In: {time}",
+    "outTime": "Out: {time}",
+    "runningDuration": "{hours}h {minutes}m (running)",
+    "logDisplay": "{checkIn} → {checkOut}",
+    "office": "Office",
+    "home": "Home",
+    "lateMinutes": "{m}m late",
+    "noLogs": "No attendance logs for this month.",
+    "noRecords": "No records",
+    "days": {
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "correctionForm": {
+      "title": "Request Correction",
+      "selectRecord": "Select Record",
+      "chooseDate": "Choose a date...",
+      "correctedCheckIn": "Corrected Check-In",
+      "correctedCheckOut": "Corrected Check-Out",
+      "reason": "Reason",
+      "attachment": "Attachment (optional)",
+      "uploadDocument": "Upload supporting document",
+      "submit": "Submit Correction",
+      "submitted": "Correction Request Submitted",
+      "submittedMessage": "Your Captain will review it shortly. You'll be notified when it's approved or rejected.",
+      "reasonPlaceholder": "Explain why correction is needed...",
+      "validation": {
+        "recordRequired": "Please select a record",
+        "reasonRequired": "Reason is required"
+      }
+    }
+  },
+  "helpTickets": {
+    "title": "Help Tickets",
+    "raiseTicket": "Raise a Ticket",
+    "noTickets": "No tickets",
+    "emptyMessage": "Raise one if you're stuck — your Captain or Admin will pick it up.",
+    "statusLabels": {
+      "open": "Open",
+      "inReview": "In Review",
+      "escalated": "Escalated",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "categoryOptions": {
+      "softwareBug": "Software Bug",
+      "networkIssue": "Network Issue",
+      "equipment": "Equipment",
+      "training": "Training",
+      "hr": "HR",
+      "other": "Other"
+    },
+    "form": {
+      "title": "Raise a Ticket",
+      "category": "Category",
+      "subject": "Subject",
+      "description": "Description",
+      "attachments": "Attachments (optional)",
+      "uploadPrompt": "Upload images or documents",
+      "submit": "Submit Ticket",
+      "categoryPlaceholder": "Select category...",
+      "subjectPlaceholder": "Brief title for your issue",
+      "descriptionPlaceholder": "Describe your issue in detail. Include any steps to reproduce, if applicable."
+    },
+    "validation": {
+      "categoryRequired": "Category is required",
+      "subjectRequired": "Subject is required",
+      "subjectMinLength": "Subject must be at least 3 characters",
+      "subjectMaxLength": "Subject too long (max 200 characters)",
+      "descriptionRequired": "Description is required"
+    },
+    "success": {
+      "title": "Ticket Raised",
+      "message": "Your ticket has been submitted.",
+      "detail": "Your ticket has been submitted. Your Captain or Admin will review it shortly. You can track its status from this page."
+    },
+    "error": {
+      "somethingWentWrong": "Something went wrong",
+      "dismiss": "Dismiss"
+    },
+    "raisedDate": "Raised {date}",
+    "updatedDate": "Updated {date}",
+    "resolution": "Resolution",
+    "commentsCount": "Comments ({count})",
+    "noComments": "No comments yet",
+    "addComment": "Add a comment...",
+    "send": "Send"
+  },
+  "createTask": {
+    "title": "New Task",
+    "titleField": "Title",
+    "description": "Description",
+    "priority": "Priority",
+    "dueDate": "Due date",
+    "nextFollowUp": "Next follow-up",
+    "attachments": "Attachments",
+    "uploadPrompt": "Upload PDF, DOCX, or Image",
+    "cancel": "Cancel",
+    "saveTask": "Save Task",
+    "taskCreated": "Task Created ✓",
+    "pendingSync": "Pending sync — will upload when online",
+    "discardChanges": "Discard changes?",
+    "titlePlaceholder": "e.g., Quality check on Lot #FQ-4421",
+    "descriptionPlaceholder": "Add details about this task...",
+    "dueDateHint": "Optional. Limited to this week ({start} – {end}).",
+    "priorityOptions": {
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "critical": "critical"
+    },
+    "validation": {
+      "dueDateRequired": "Due date is required",
+      "dueDatePast": "Due date can't be in the past",
+      "dueDateWithinWeek": "Must be within this week"
+    },
+    "saveError": "Could not save task. Please try again.",
+    "syncMessage": "Task created! It will sync when online."
+  },
+  "notificationsPage": {
+    "notifications": "Notifications",
+    "all": "All",
+    "unread": "Unread",
+    "tasks": "Tasks",
+    "system": "System",
+    "markAllRead": "Mark All Read",
+    "markRead": "Mark as Read",
+    "viewDetails": "View Details",
+    "empty": "No notifications yet",
+    "emptyMessage": "When your captain sends updates or alerts, they'll appear here.",
+    "goToDashboard": "Go to Dashboard",
+    "failedToLoad": "Failed to load notifications",
+    "loadError": "Could not fetch notifications. Please try again.",
+    "types": {
+      "task": "Task Update",
+      "rescue": "Rescue Alert",
+      "leave": "Leave Update",
+      "ticket": "Ticket Update",
+      "system": "System Notification",
+      "training": "Training Update"
+    }
+  }
+}

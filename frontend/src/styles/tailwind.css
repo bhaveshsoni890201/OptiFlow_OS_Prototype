@@ -1,0 +1,156 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: var(--opt-font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+    font-size: var(--opt-body-size);
+    line-height: var(--opt-body-line-height);
+    min-height: 100dvh;
+  }
+
+  .dark body {
+    @apply bg-neutral-900 text-neutral-50;
+  }
+
+  [data-theme="high-contrast"] body {
+    @apply bg-neutral-50 text-neutral-900;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+}
+
+@layer components {
+  .touch-target {
+    @apply min-h-touch min-w-touch;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-card border border-neutral-200;
+  }
+
+  .dark .card {
+    @apply bg-neutral-800 border-neutral-700;
+  }
+
+  [data-theme="high-contrast"] .card {
+    @apply border-2 border-neutral-300;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-card-hover transition-shadow duration-200;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-caption font-semibold;
+  }
+
+  .chip-pending { @apply chip bg-neutral-100 text-neutral-600; }
+  .chip-in-progress { @apply chip bg-info-600/10 text-info-600; }
+  .chip-blocked { @apply chip bg-warning-50 text-warning-500; }
+  .chip-escalated { @apply chip bg-danger-50 text-danger-600; }
+  .chip-completed { @apply chip bg-success-50 text-success-600; }
+  .chip-reviewed { @apply chip bg-brand-50 text-brand-600; }
+
+  .kpi-tile {
+    @apply card p-4 flex flex-col gap-1;
+  }
+
+  .kpi-value {
+    @apply text-display font-bold;
+  }
+
+  .kpi-label {
+    @apply text-caption text-neutral-500;
+  }
+
+  .kpi-trend-positive {
+    @apply text-success-600 text-caption flex items-center gap-1;
+  }
+
+  .kpi-trend-negative {
+    @apply text-danger-600 text-caption flex items-center gap-1;
+  }
+
+  .skeleton {
+    @apply animate-pulse bg-neutral-200 rounded;
+  }
+
+  .dark .skeleton {
+    @apply bg-neutral-700;
+  }
+
+  [data-theme="high-contrast"] .skeleton {
+    @apply bg-neutral-300;
+  }
+
+  .empty-state {
+    @apply flex flex-col items-center justify-center py-16 px-4 text-center;
+  }
+
+  .empty-state-icon {
+    @apply w-16 h-16 text-neutral-300 mb-4;
+  }
+
+  .animate-check-pop {
+    animation: check-pop 0.4s ease-out;
+  }
+
+  .animate-fade-out-down {
+    animation: fade-out-down 0.5s ease-out forwards;
+  }
+
+  @keyframes check-pop {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes fade-out-down {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(8px); }
+  }
+
+  .empty-state-title {
+    @apply text-h3 text-neutral-600 mb-1;
+  }
+
+  .empty-state-description {
+    @apply text-body text-neutral-400 mb-4;
+  }
+
+  .page-container {
+    @apply max-w-content mx-auto px-4 md:px-6 py-6;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-neutral-300 rounded-full;
+  }
+}

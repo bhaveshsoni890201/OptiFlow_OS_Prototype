@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40">
+  <defs>
+    <linearGradient id="opt-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="4" width="32" height="32" rx="8" fill="url(#opt-logo-grad)"/>
+  <text x="16" y="26" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="18">O</text>
+  <text x="42" y="26" fill="#171717" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="16">OptiFlow</text>
+  <text x="42" y="36" fill="#737373" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="9">OS</text>
+</svg>
