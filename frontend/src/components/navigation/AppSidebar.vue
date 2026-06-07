@@ -2,6 +2,8 @@
 import { computed, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useStore } from '../../stores/useStore'
+import brandLogo from '@/assets/branding/logo.svg'
+import brandLogoMark from '@/assets/branding/logo-mark.svg'
 
 const appVersion = import.meta.env.VITE_APP_VERSION || '0.1.0'
 
@@ -223,6 +225,26 @@ const transitionClass = 'transition-all duration-200 ease-in-out'
     class="hidden md:flex flex-col bg-white border-r border-neutral-200 h-full overflow-hidden z-40"
     :class="[sidebarWidth, transitionClass]"
   >
+    <!-- Branding -->
+    <router-link
+      :to="`/${panelName}`"
+      class="flex items-center gap-2 px-4 py-3 border-b border-neutral-200 shrink-0"
+      :class="collapsed ? 'justify-center px-2' : ''"
+    >
+      <img
+        v-if="!collapsed"
+        :src="brandLogo"
+        alt="OptiFlow OS Logo"
+        class="h-8 w-auto"
+      />
+      <img
+        v-else
+        :src="brandLogoMark"
+        alt="OptiFlow OS Logo"
+        class="h-7 w-7"
+      />
+    </router-link>
+
     <!-- Profile section -->
     <div
       class="flex items-center gap-3 px-4 py-3 border-b border-neutral-200 shrink-0"

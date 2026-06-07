@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40">
+  <defs>
+    <linearGradient id="opt-grad-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="4" width="32" height="32" rx="8" fill="url(#opt-grad-dark)"/>
+  <text x="16" y="26" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="18">O</text>
+  <text x="44" y="25" fill="#F5F5F5" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="15">OptiFlow OS</text>
+</svg>

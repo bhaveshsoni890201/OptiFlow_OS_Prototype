@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { Language } from '../types'
+import brandLogo from '@/assets/branding/logo.svg'
 
 defineProps<{
   title: string
@@ -27,21 +28,11 @@ function switchLang(lang: Language) {
     >
       <div class="max-w-md">
         <div class="mb-6">
-          <svg
-            class="h-12 w-12 text-brand-600"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="40" height="40" rx="8" fill="currentColor" />
-            <path
-              d="M12 20L18 26L28 14"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <img
+            :src="brandLogo"
+            alt="OptiFlow OS Logo"
+            class="h-10 w-auto"
+          />
         </div>
         <h2 class="text-3xl font-bold text-gray-900 mb-3">OptiFlow OS</h2>
         <p class="text-lg text-gray-600 leading-relaxed">
@@ -56,21 +47,11 @@ function switchLang(lang: Language) {
     >
       <div class="w-full max-w-sm">
         <div class="text-center mb-8 lg:hidden">
-          <svg
-            class="h-10 w-10 text-brand-600 mx-auto mb-2"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="40" height="40" rx="8" fill="currentColor" />
-            <path
-              d="M12 20L18 26L28 14"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <img
+            :src="brandLogo"
+            alt="OptiFlow OS Logo"
+            class="h-8 w-auto mx-auto mb-2"
+          />
           <h1 class="text-xl font-semibold text-gray-900">OptiFlow OS</h1>
         </div>
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import brandLogo from '@/assets/branding/logo.svg'
 import {
   Bars3Icon,
   ArrowLeftIcon,
@@ -121,14 +122,12 @@ function handleAvatarKeydown(e: KeyboardEvent) {
     <!-- Desktop layout (md+) -->
     <div class="hidden md:flex items-center h-16 px-4 lg:px-6 gap-4">
       <!-- Logo -->
-      <router-link :to="`/${panelName}`" class="flex items-center gap-2 shrink-0">
-        <div
-          class="flex items-center justify-center w-8 h-8 text-sm font-bold text-white rounded-lg"
-          :class="panelBadge"
-        >
-          O
-        </div>
-        <span class="hidden lg:inline text-sm font-semibold text-neutral-900">OptiFlow</span>
+      <router-link :to="`/${panelName}`" class="flex items-center gap-2 shrink-0 whitespace-nowrap">
+        <img
+          :src="brandLogo"
+          alt="OptiFlow OS Logo"
+          class="h-8 w-auto"
+        />
       </router-link>
 
       <!-- Back button (conditional) -->

@@ -1,5 +1,12 @@
 # OptiFlow OS
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="frontend/src/assets/branding/logo-dark.svg">
+    <img src="frontend/src/assets/branding/logo.svg" alt="OptiFlow OS Logo" width="320" />
+  </picture>
+</p>
+
 **Enterprise Workflow Operating System for Indian MSMEs**
 
 AI-Powered Operations, HRMS, Task Management, Training & Business Execution Platform
