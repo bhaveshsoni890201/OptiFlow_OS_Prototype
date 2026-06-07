@@ -18,6 +18,7 @@ import { useRouter } from 'vue-router'
 import { useAdminStore } from '../../stores/adminStore'
 import { useRescueStore } from '../../stores/rescueStore'
 import { useTaskStore } from '../../stores/taskStore'
+import { formatDateShort } from '../../utils/formatters'
 import { useWorkflowStore } from '../../stores/workflowStore'
 
 const router = useRouter()
@@ -132,7 +133,7 @@ async function loadDashboard() {
         type: 'leave' as const,
         label: `${r.leave_type} - ${r.total_days} days`,
         employee: r.employee_name,
-        time: new Date(r.created_on).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }),
+        time: formatDateShort(r.created_on),
       }))
     exceptionAlerts.value = rescueStore.records
       .filter((r) => r.delay_days >= 5)
@@ -141,7 +142,7 @@ async function loadDashboard() {
         id: i + 1,
         severity: r.delay_days >= 7 ? 'high' as const : 'medium' as const,
         message: `${r.employee_name}: ${r.task_title} (${r.delay_days}d overdue)`,
-        time: new Date(r.last_activity).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }),
+        time: formatDateShort(r.last_activity),
       }))
   } catch {
     error.value = 'Failed to load dashboard data'

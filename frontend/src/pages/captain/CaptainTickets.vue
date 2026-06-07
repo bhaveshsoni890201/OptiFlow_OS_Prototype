@@ -21,6 +21,7 @@ import type { HelpTicket } from '../../types'
 import { usePagination } from '../../composables/usePagination'
 import OptPagination from '../../components/common/OptPagination.vue'
 import OptEmptyState from '../../components/common/OptEmptyState.vue'
+import { formatDateShort, formatDateTime } from '../../utils/formatters'
 
 const ticketStore = useTicketStore()
 const adminStore = useAdminStore()
@@ -280,8 +281,8 @@ onMounted(loadTickets)
                 </div>
                 <div class="flex items-center gap-3 text-xs text-slate-400">
                   <span>{{ getEmployeeName(ticket.raised_by) }}</span>
-                  <span>{{ new Date(ticket.created_on).toLocaleDateString('en-IN') }}</span>
-                  <span :class="priorityColors[ticket.priority]" class="font-medium capitalize">{{ ticket.priority }}</span>
+                  <span>{{ formatDateShort(ticket.created_on) }}</span>
+                    <span :class="priorityColors[ticket.priority]" class="font-medium capitalize">{{ ticket.priority }}</span>
                   <span v-if="ticket.attachments?.length" class="inline-flex items-center gap-0.5">
                     <PaperClipIcon class="w-3 h-3" /> {{ ticket.attachments.length }}
                   </span>
@@ -335,7 +336,7 @@ onMounted(loadTickets)
                 <div>
                   <div class="flex items-center gap-2">
                     <span class="text-xs font-medium text-slate-900">{{ c.author }}</span>
-                    <span class="text-[10px] text-slate-400">{{ new Date(c.created_on).toLocaleString('en-IN') }}</span>
+                    <span class="text-[10px] text-slate-400">{{ formatDateTime(c.created_on) }}</span>
                   </div>
                   <p class="text-xs text-slate-600 mt-0.5">{{ c.text }}</p>
                 </div>
@@ -367,7 +368,7 @@ onMounted(loadTickets)
               <p class="text-xs font-medium mb-1">Resolution Notes</p>
               {{ ticket.resolution_notes }}
               <p v-if="ticket.resolved_on" class="text-xs text-emerald-500 mt-1">
-                Resolved {{ new Date(ticket.resolved_on).toLocaleString('en-IN') }}
+                Resolved {{ formatDateTime(ticket.resolved_on) }}
                 <span v-if="ticket.created_on">
                   ({{ Math.round((new Date(ticket.resolved_on).getTime() - new Date(ticket.created_on).getTime()) / 3600000) }}h to resolve)
                 </span>

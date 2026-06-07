@@ -17,6 +17,7 @@ import {
 } from '@heroicons/vue/24/outline'
 import { useAdminStore } from '../../stores/adminStore'
 import { useStore } from '../../stores/useStore'
+import { formatDateShort } from '../../utils/formatters'
 
 const route = useRoute()
 const router = useRouter()
@@ -46,7 +47,7 @@ const statusColors: Record<string, string> = {
 
 function formatDate(iso?: string): string {
   if (!iso) return '—'
-  return new Date(iso).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })
+  return formatDateShort(iso)
 }
 
 function openTransfer() {

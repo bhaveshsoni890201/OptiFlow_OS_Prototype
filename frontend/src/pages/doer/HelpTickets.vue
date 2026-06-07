@@ -238,17 +238,13 @@ function statusLabel(status: TicketStatus): string {
   }
 }
 
-function formatRelativeTime(dateStr: string): string {
-  const diff = Date.now() - new Date(dateStr).getTime()
-  const mins = Math.floor(diff / 60000)
-  if (mins < 60) return `${mins}m ago`
-  const hours = Math.floor(mins / 60)
-  if (hours < 24) return `${hours}h ago`
-  const days = Math.floor(hours / 24)
-  return `${days}d ago`
+import { formatRelativeTime, formatDateShort } from '../../utils/formatters'
+
+function formatRelativeTimeOverride(dateStr: string): string {
+  return formatRelativeTime(dateStr)
 }
 
-function formatDateShort(dateStr: string): string {
+function formatDateShortOverride(dateStr: string): string {
   return formatRelativeTime(dateStr)
 }
 </script>
@@ -327,10 +323,10 @@ function formatDateShort(dateStr: string): string {
           <h3 class="text-body-strong text-neutral-900 mb-1">{{ t.subject }}</h3>
           <div class="flex items-center gap-3 text-caption text-neutral-400">
             <span class="flex items-center gap-1"
-              ><ClockIcon class="h-3.5 w-3.5" /> {{ $t('helpTickets.raisedDate', { date: formatDateShort(t.created_on) }) }}</span
+              ><ClockIcon class="h-3.5 w-3.5" /> {{ $t('helpTickets.raisedDate', { date: formatDateShortOverride(t.created_on) }) }}</span
             >
             <span class="flex items-center gap-1"
-              ><ArrowPathIcon class="h-3.5 w-3.5" /> {{ $t('helpTickets.updatedDate', { date: formatDateShort(t.updated_on) }) }}</span
+              ><ArrowPathIcon class="h-3.5 w-3.5" /> {{ $t('helpTickets.updatedDate', { date: formatDateShortOverride(t.updated_on) }) }}</span
             >
             <span v-if="t.comments.length" class="flex items-center gap-1"
               ><ChatBubbleLeftEllipsisIcon class="h-3.5 w-3.5" /> {{ t.comments.length }}</span
@@ -541,7 +537,7 @@ function formatDateShort(dateStr: string): string {
             >
             <span>·</span>
             <span class="flex items-center gap-1"
-              ><ArrowPathIcon class="h-3.5 w-3.5" /> {{ $t('helpTickets.updatedDate', { date: formatDateShort(selectedTicket.updated_on) }) }}</span
+              ><ArrowPathIcon class="h-3.5 w-3.5" /> {{ $t('helpTickets.updatedDate', { date: formatDateShortOverride(selectedTicket.updated_on) }) }}</span
             >
           </div>
 
@@ -568,7 +564,7 @@ function formatDateShort(dateStr: string): string {
               <span class="font-semibold text-success-600">{{ $t('helpTickets.resolution') }}</span>
               <p class="text-neutral-600 mt-0.5">{{ selectedTicket.resolution_notes }}</p>
               <p v-if="selectedTicket.resolved_on" class="text-neutral-400 mt-0.5">
-                Resolved {{ formatRelativeTime(selectedTicket.resolved_on) }}
+                Resolved {{ formatRelativeTimeOverride(selectedTicket.resolved_on) }}
               </p>
             </div>
           </div>
@@ -631,7 +627,7 @@ function formatDateShort(dateStr: string): string {
                   <div class="flex items-center gap-2">
                     <span class="text-body-strong text-neutral-900 text-[13px]">{{ c.author }}</span>
                     <span class="text-caption text-neutral-400">{{
-                      formatDateShort(c.created_on)
+                      formatDateShortOverride(c.created_on)
                     }}</span>
                   </div>
                   <p class="text-body text-neutral-600">{{ c.text }}</p>

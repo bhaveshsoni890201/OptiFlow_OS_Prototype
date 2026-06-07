@@ -18,6 +18,7 @@ import { useAdminStore } from '../../stores/adminStore'
 import { useStore } from '../../stores/useStore'
 import { getTrainingAssignments } from '../../services'
 import OptEmptyState from '../../components/common/OptEmptyState.vue'
+import { formatDateShort } from '../../utils/formatters'
 
 const route = useRoute()
 const router = useRouter()
@@ -207,13 +208,7 @@ const statusColors: Record<string, string> = {
 
 function formatDateTime(iso?: string) {
   if (!iso) return '—'
-  return new Date(iso).toLocaleDateString('en-IN', {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-  })
+  return formatDateShort(iso)
 }
 
 async function requestTransfer() {

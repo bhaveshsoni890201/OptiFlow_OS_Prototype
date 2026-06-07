@@ -246,7 +246,7 @@ onMounted(loadDetail)
                   {{ i === 1 ? 'Today — Overdue' : `Day ${i - 1} — No update` }}
                 </p>
                 <p class="text-xs text-slate-400">
-                  {{ new Date(Date.now() - (i - 1) * 86400000).toLocaleDateString() }}
+                  {{ new Date(Date.now() - (i - 1) * 86400000).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) }}
                 </p>
               </div>
             </div>

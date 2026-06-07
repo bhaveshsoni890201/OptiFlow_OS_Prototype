@@ -15,6 +15,7 @@ import {
 import { getTrainingAssignments } from '../../services'
 import { useAdminStore } from '../../stores/adminStore'
 import OptEmptyState from '../../components/common/OptEmptyState.vue'
+import { formatDateShort, formatDate } from '../../utils/formatters'
 
 const adminStore = useAdminStore()
 
@@ -174,11 +175,7 @@ const statusColors: Record<string, string> = {
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('en-IN', {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-  })
+  return formatDateShort(iso)
 }
 
 async function loadTrainingData() {

@@ -4,10 +4,7 @@ function toDate(date: string | Date): Date {
 
 export function formatDate(date: string | Date): string {
   const d = toDate(date)
-  const day = d.getDate().toString().padStart(2, '0')
-  const month = d.toLocaleString('en-IN', { month: 'short' })
-  const year = d.getFullYear()
-  return `${day}-${month}-${year}`
+  return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
 }
 
 export function formatDateShort(date: string | Date): string {
@@ -31,6 +28,11 @@ export function formatDateShortNoYear(date: string | Date): string {
 }
 
 export function formatTime(date: string | Date): string {
+  const d = toDate(date)
+  return d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: false })
+}
+
+export function formatTimeAMPM(date: string | Date): string {
   const d = toDate(date)
   return d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true })
 }

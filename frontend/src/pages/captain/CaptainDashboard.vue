@@ -64,7 +64,7 @@ const adminStore = useAdminStore()
 const loading = ref(true)
 const error = ref<string | null>(null)
 
-const currentDate = new Date().toLocaleDateString('en-US', {
+const currentDate = new Date().toLocaleDateString('en-IN', {
   weekday: 'long',
   year: 'numeric',
   month: 'long',

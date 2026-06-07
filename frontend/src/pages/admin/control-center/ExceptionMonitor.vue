@@ -192,13 +192,10 @@ const statusColors: Record<string, string> = {
   resolved: 'bg-emerald-50 text-emerald-600',
 }
 
+import { formatDateShort } from '../../../utils/formatters'
+
 function formatDateTime(iso: string) {
-  return new Date(iso).toLocaleString('en-IN', {
-    day: '2-digit',
-    month: 'short',
-    hour: '2-digit',
-    minute: '2-digit',
-  })
+  return formatDateShort(iso)
 }
 </script>
 

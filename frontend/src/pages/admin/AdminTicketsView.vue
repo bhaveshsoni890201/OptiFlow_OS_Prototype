@@ -13,6 +13,7 @@ import { useTicketStore } from '../../stores/ticketStore'
 import type { HelpTicket } from '../../types'
 import { usePagination } from '../../composables/usePagination'
 import OptPagination from '../../components/common/OptPagination.vue'
+import { formatDateShort, formatDateTime } from '../../utils/formatters'
 
 const ticketStore = useTicketStore()
 
@@ -100,12 +101,7 @@ const statusColors: Record<string, string> = {
 }
 
 function formatDateTime(iso: string) {
-  return new Date(iso).toLocaleDateString('en-IN', {
-    day: '2-digit',
-    month: 'short',
-    hour: '2-digit',
-    minute: '2-digit',
-  })
+  return formatDateShort(iso)
 }
 
 onMounted(async () => {
